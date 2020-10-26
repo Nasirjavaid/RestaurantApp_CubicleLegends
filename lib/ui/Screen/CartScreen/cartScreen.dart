@@ -201,7 +201,7 @@ class _CartScreenState extends State<CartScreen> with WidgetsBindingObserver {
                     InkWell(
                       onTap: () {
                         setState(() {
-                          if (state.foodinfo[index].count > 1) {
+                          if (state.foodinfo[index].count > 1) {  
                             print("Index is here  $index");
                             BlocProvider.of<CartBloc>(context)
                                 .add(DecreaseProductCountInCartEvent(
